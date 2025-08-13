@@ -1,4 +1,10 @@
 public class Geometria {
-    double area;
-    double perimetro;
+    public double pi = 3.14;
+    public double  raio;
+    public  double altura;
+    public double base;
+    public double lado;
+
+    
+
 }
