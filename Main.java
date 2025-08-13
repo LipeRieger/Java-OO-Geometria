@@ -18,14 +18,29 @@ public class Main {
                 System.out.println("Qual o raio?");
                 double raio = meuScanner.nextDouble();
 
-                if (escolhaUsuario2 == 1) {;
+                if (escolhaUsuario2 == 1) {
                     double area_do_circulo = obj.areaCirculo(raio);
                     System.out.println(area_do_circulo);
                 } else if (escolhaUsuario2 == 2) {
                
                 }
+
                 break;
-           
+            
+            case 5:
+                System.out.println("Deseja qual opção: 1-volume ou 2-area da superfície?");
+                int escolhaUsuario2 = meuScanner.nextInt();
+
+                System.out.println("Qual a medida da aresta?")
+                double aresta = meuScanner.nextDouble();
+                if (escolhaUsuario2 == 1) {
+                    double volume_do_cubo = obj.VolumeCubo(aresta);
+                    System.out.println(volume_do_cubo);
+                } else if (escolhaUsuario2 == 2) {
+                    double area_superficial_do_cubo = obj.areaSuperficialCubo(aresta);
+                    System.out.println(area_superficial_do_cubo);
+                }
+                break;
             default:
                 throw new AssertionError();
         }
