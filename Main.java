@@ -45,6 +45,52 @@ public class Main {
                     System.out.println(perimetroRetangulo);
                 }
                 break;
+            case 3:
+                System.out.println("Deseja qual opção: 1-area ou 2-perimetro?");
+                int escolhaUsuario4 = meuScanner.nextInt();
+
+                if(escolhaUsuario4 == 1){
+                    System.out.println("Qual e a base?");
+                    double baseTrinagulo = meuScanner.nextDouble();
+
+                    System.out.println("Qual a altura?");
+                    double alturaTriangulo = meuScanner.nextDouble();
+
+                    double areaDoTriangulo = obj.areaTriangulo(baseTrinagulo, alturaTriangulo);
+                    System.out.println(areaDoTriangulo);
+                }else if(escolhaUsuario4 == 2){
+                    System.out.println("Qual é o lado 1?");
+                    double lado1 = meuScanner.nextDouble();
+                    System.out.println("Qual é o lado 2? ");
+                    double lado2 = meuScanner.nextDouble();
+                    System.out.println("Qual é o lado 3?");
+                    double lado3 = meuScanner.nextDouble();
+
+                    double perimetroTriangulo = obj.perimetroTriangulo(lado1, lado2, lado3);
+                    System.out.println(perimetroTriangulo);
+                }
+                    break;
+                case 4: 
+                    System.out.println("Deseja qual opção: 1-area ou 2-perimetro?");
+                    int escolhaUsuario5 = meuScanner.nextInt();
+                    
+                    if(escolhaUsuario5 == 1){
+                        System.out.println("numero de lados");
+                        double numeroDeLados = meuScanner.nextDouble();
+
+                        System.out.println("comprimento do lado");
+                        double comprimentoDoLado = meuScanner.nextDouble();
+
+                        double PerimetoPoligono = obj.PerimetoPoligono(numeroDeLados, comprimentoDoLado);
+                    }else if(escolhaUsuario5 == 2){
+                        System.out.println("perimetro");
+                        double perimetro = meuScanner.nextDouble();
+
+                        System.out.println("apotema");
+                        double apotema = meuScanner.nextDouble();
+
+                        double areaPoligono = obj.areaPoligono(perimetro, apotema);
+                    }
             default:
                 throw new AssertionError();
         }
