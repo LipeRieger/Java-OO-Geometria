@@ -1,11 +1,13 @@
-
 import java.util.Scanner;
 
 public class Main {
+    public static final String RESET = "\u001B[0m";
+    public static final String NEGRITO = "\u001B[1m";
+    public static final String SUBLINHADO = "\u001B[4m";
+
     public static void main(String[] args) {
         Scanner meuScanner = new Scanner(System.in);
-        
-        System.out.println("Escolha a forma geometrica- 1-Circulo, 2-retangulo, 3-triangulo,4-poligono regular, 5-cubo,6-esfera,7-cilindro,8-prisma");
+        System.out.println(NEGRITO + "Escolha a forma geometrica- \n 1-Circulo \n 2-retangulo \n 3-triangulo \n 4-poligono regular \n 5-cubo \n 6-esfera \n 7-cilindro \n 8-prisma"+ RESET);
         int escolhaUsuario = meuScanner.nextInt();
 
         GeometriaPlana obj = new GeometriaPlana();
