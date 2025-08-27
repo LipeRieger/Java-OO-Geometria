@@ -23,6 +23,7 @@ public class GeometriaPlana extends Geometria {
     }
     public double PerimetoPoligono(double  perimetro, double apotema){
         return (perimetro * apotema)/2;
+        
     }
 }
 
